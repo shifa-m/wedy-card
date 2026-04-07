@@ -1,0 +1,28 @@
+import React from 'react'
+
+const leftside = () => {
+            return (
+
+
+                        <div>
+
+                                    <div className='bg-gray-200 h-[40%] w-[50%] m-10 rounded-2xl'>
+                                                <h1 className='h-15 w-full bg-gray-300  rounded-t-2xl p-3 font-bold text-xl'>Order Summary</h1>
+                                                <h1 className='h-15 p-4 font-bold '>Delivery Fee <span className='pl-[60%]'>Free</span></h1>
+                                                <h1 className='h-15 p-4 font-bold'>Total <span className='pl-[70%] text-2xl'>11,999</span></h1>
+                                                <button className='h-10 w-[70%]  bg-red-500 ml-15 rounded-xl  mt-8 font-black text-xl text-white'>Confirm</button>
+
+                                    </div>
+                                    <div className='bg-gray-200 h-[40%] w-[50%] m-10 rounded-2xl'>
+                                                <h1 className='h-15 w-full bg-gray-300  rounded-t-2xl p-3 font-bold text-xl'>Order Summary</h1>
+                                                <h1 className='h-15 p-4 font-bold '>Delivery Fee <span className='pl-[60%]'>Free</span></h1>
+                                                <h1 className='h-15 p-4 font-bold'>Total <span className='pl-[70%] text-2xl'>11,999</span></h1>
+                                                <button className='h-10 w-[70%]  bg-red-500 ml-15 rounded-xl  mt-8 font-black text-xl text-white'>Confirm</button>
+
+                                    </div>
+                        </div>
+
+            )
+}
+
+export default leftside
