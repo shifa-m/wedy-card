@@ -8,7 +8,7 @@ const Cards = () => {
         <div className='m-5 '>
           <h1 className='text-xl font-bold ml-1'>Golden Royale</h1>
           <h1 className='text-xl font-bold ml-1'>$45</h1>
-          <button className='bg-red-500 h-9 w-80 rounded-xl mt-2 text-white'>Add to Cart</button>
+          <button className='bg-[#845ec2] h-9 w-80 rounded-xl mt-2 text-white'>Add to Cart</button>
 
         </div>
       </div>
@@ -17,7 +17,7 @@ const Cards = () => {
         <div className='m-5 '>
           <h1 className='text-xl font-bold ml-1'>Golden Royale</h1>
           <h1 className='text-xl font-bold ml-1'>$45</h1>
-          <button className='bg-red-500 h-9 w-80 rounded-xl mt-2 text-white'>Add to Cart</button>
+          <button className='bg-[#845ec2] h-9 w-80 rounded-xl mt-2 text-white'>Add to Cart</button>
 
         </div>
       </div>

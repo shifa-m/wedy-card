@@ -3,7 +3,7 @@ import Card from './Cards'
 
 const bottom = () => {
   return (
-    <div className='flex flex-wrap justify-around ' >
+    <div className='flex flex-wrap justify-around  ' >
       <Card/>
       <Card/>
       <Card/>
