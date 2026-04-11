@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/section1/Header'
+import Header from './components/section1/header'
 import Cards from './components/section1/Cards'
 import Main from './components/section2/Main'
 

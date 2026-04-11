@@ -2,29 +2,77 @@ import React from 'react'
 import Bottom from './bottom'
 
 const Content = () => {
-            return (
-                        <div className=''>
-                                    <div className='flex  m-10  ml-[35%] top-15  h-15 w-[30%] rounded-4xl bg-gray-400 items-center fixed bg-[linear-gradient(to_left_bottom,#eb96c6,#dd99d2,#cc9cdc,#b8a0e3,#a3a4e7,#91adf0,#7db6f6,#69bff8,#52cffe,#41dfff,#46eefa,#5ffbf1)]'>
-                                                <button className=' h-9 w-28 mr-15 ml-10 rounded-xl font-bold transition duration-300 hover:text-xl  hover:text-white cursor-pointer'>Traditional</button>
-                                                <button className=' h-9 w-28 mr-15 rounded-xl font-bold transition duration-300 hover:text-xl  hover:text-white cursor-pointer'>Modern</button>
-                                                <button className=' h-9 w-28 mr-15 rounded-xl font-bold transition duration-300  hover:text-xl  hover:text-white cursor-pointer'>Luxury</button>
-                                                <button className=' h-9 w-28 mr-15 rounded-xl font-bold transition duration-300 hover:text-xl hover:text-white cursor-pointer'>Filter </button>
-                                    </div>
-                                    <div className='flex justify-center  mt-20 pt-30  '>
-                                                <h1 className='font-bold text-2xl'><span className='text-7xl ml-10 text-white'>Wedding Cards</span><br />
-                                                            <span className='font-semibold ml-28 text-gray-700 text-xl'>When two hearts choose each other,</span><br />
-                                                            <span className='font-semibold mt-10 ml-35 text-gray-700 text-xl'>a new story begins to bloom.</span><br />
-                                                            <span className='text-gray-700 font-semibold ml-10 text-xl'>Let your invitation whisper the magic of that moment.</span></h1>
-                                    </div>
-                                    <div>
-                                                <h1 className='font-bold  m-5  text-3xl'>Latest Designs</h1>
-                                    </div>
-                                    <div>
-                                                <Bottom />
-                                    </div>
-                        </div>
+  return (
+    <div>
 
-            )
+      
+      <div className='flex justify-center mt-24 px-2'>
+        <div className='flex flex-wrap gap-3 
+                        lg:h-14 lg:w-[40%] 
+                        md:h-12 md:w-[55%] 
+                        w-full 
+                        rounded-full items-center justify-center
+                        bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300 fixed'>
+
+          <button className='px-4 py-1 font-bold hover:text-white'>Traditional</button>
+          <button className='px-4 py-1 font-bold hover:text-white'>Modern</button>
+          <button className='px-4 py-1 font-bold hover:text-white'>Luxury</button>
+          <button className='px-4 py-1 font-bold hover:text-white'>Filter</button>
+
+        </div>
+      </div>
+
+      
+      <div className='mt-6 flex justify-end gap-3 px-4 font-bold 
+                      text-sm sm:text-base md:text-lg'>
+        
+        <button className='px-4 py-1 sm:px-5 sm:py-2 
+                           rounded-full transition hover:bg-[#b28dee] hover:text-white'>
+          Sign in
+        </button>
+
+        <button className='px-4 py-1 sm:px-5 sm:py-2 
+                           rounded-full transition hover:bg-[#b28dee] hover:text-white'>
+          Log in
+        </button>
+
+      </div>
+
+      <div className='flex justify-center text-center mt-10 px-4'>
+        <h1 className='font-bold'>
+
+          <span className='text-3xl sm:text-5xl md:text-6xl text-white'>
+            Wedding Cards
+          </span><br />
+
+          <span className='text-sm sm:text-lg text-gray-700'>
+            When two hearts choose each other,
+          </span><br />
+
+          <span className='text-sm sm:text-lg text-gray-700'>
+            a new story begins to bloom.
+          </span><br />
+
+          <span className='text-sm sm:text-lg text-gray-700'>
+            Let your invitation whisper the magic of that moment.
+          </span>
+
+        </h1>
+      </div>
+
+      
+      <div className='mt-10 px-4'>
+        <h1 className='font-bold text-xl sm:text-2xl md:text-3xl'>
+          Latest Designs
+        </h1>
+      </div>
+
+      <div className='mt-5 px-4'>
+        <Bottom />
+      </div>
+
+    </div>
+  )
 }
 
 export default Content
