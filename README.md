@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="Screenshot (230)" src="https://github.com/user-attachments/assets/421aeffd-5e4f-4552-9399-fae2d98da3ff" />
+<img width="1920" height="1080" alt="Screenshot (229)" src="https://github.com/user-attachments/assets/75e28a82-69c6-4f04-8466-7b0c0579dceb" />
 # 💌 Wedding Card Web App
 
 A modern and responsive web application for browsing and selecting beautiful wedding invitation cards.
