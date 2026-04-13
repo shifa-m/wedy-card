@@ -2,6 +2,14 @@ import React from 'react'
 import Header from './components/section1/header'
 import Cards from './components/section1/Cards'
 import Main from './components/section2/Main'
+import {BrowserRouter , Routes} from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import Home from './components/section1/Home'
+import Profile from './components/section1/Profile'
+import Cart from './components/section1/Cart'
+
+
+
 
 const App = () => {
 
@@ -61,12 +69,22 @@ const App = () => {
     }
   ]
 
+
   return (
     <div className='bg-gradient-to-tr from-pink-500 via-purple-400 to-blue-300 min-h-screen'>
-      
-      <Header />
-      <Cards data={img} />
-      <Main />
+      <BrowserRouter>
+       <Header />
+
+       <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+
+       </Routes>
+      </BrowserRouter>
+     
+     <Cards data={img} />
+            <Main />
 
     </div>
   )
