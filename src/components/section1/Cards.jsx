@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Cards = ({ data = [] }) => {   
+
+
+const handleclick = () => {
+  alert("Your Customized cards has been placed and You will Receive your further updates on You Whatsapp ! Thank You ...");
+}
+
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center p-5'>
       
@@ -16,7 +22,7 @@ const Cards = ({ data = [] }) => {
             <h1 className='text-xl font-bold'>{item.title}</h1>
             <h2 className='text-lg font-semibold'>₹{item.price}</h2>
 
-            <button className='bg-[#845ec2] h-9 w-full rounded-xl mt-3 text-white hover:bg-purple-700'>
+            <button onClick={handleclick} className='bg-[#845ec2] h-9 w-full rounded-xl mt-3 text-white hover:bg-purple-700'>
               Customize & Order
             </button>
           </div>

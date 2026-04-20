@@ -62,7 +62,9 @@ const Leftside = () => {
         <div className='flex justify-center pb-5'>
           <button 
             className='w-[80%] sm:w-[70%] h-10 bg-[#b28dee] rounded-xl text-white font-bold transition hover:scale-105'
-          >
+            onClick={() =>
+              alert("Your Order Has been Confirmed And You Will Receive Your Further Updates on Whatsapp")
+            } >
             Confirm
           </button>
         </div>
