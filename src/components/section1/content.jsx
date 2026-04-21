@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Bottom from './bottom'
 
 const Content = () => {
+
+  const [Showsignup, setShowsignup] = useState(false)
+
+  const [Showlogin, setShowlogin] = useState(false)
+
+  
+
+
   return (
     <div>
 
       
       <div className='flex justify-center mt-24 px-2'>
+
+        
         <div className='flex flex-wrap gap-3 
                         lg:h-14 lg:w-[40%] 
                         md:h-12 md:w-[55%] 
@@ -27,14 +37,19 @@ const Content = () => {
                       text-sm sm:text-base md:text-lg'>
         
         <button className='px-4 py-1 sm:px-5 sm:py-2 
-                           rounded-full transition hover:bg-[#b28dee] hover:text-white'>
+                           rounded-full transition hover:bg-[#b28dee] hover:text-white'
+                           
+                onClick={()=>setShowsignup(true)}           >
           Sign in
         </button>
+        {Showsignup && alert("Sign up Form Opened")}
 
         <button className='px-4 py-1 sm:px-5 sm:py-2 
-                           rounded-full transition hover:bg-[#b28dee] hover:text-white'>
+                           rounded-full transition hover:bg-[#b28dee] hover:text-white'
+                           onClick={()=>setShowlogin(true)}>
           Log in
         </button>
+        {Showlogin && alert("Login Form has been Opened") }
 
       </div>
 
