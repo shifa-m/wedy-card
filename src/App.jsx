@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import Home from './components/section1/Home'
 import Profile from './components/section1/Profile'
 import Cart from './components/section1/Cart'
+import Login from './components/section1/login'
 
 
 
@@ -85,6 +86,7 @@ const App = () => {
      
      <Cards data={img} />
             <Main />
+            <Login/>
 
     </div>
   )
