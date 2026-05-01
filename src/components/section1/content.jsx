@@ -69,7 +69,7 @@ const Content = () => {
           </span><br />
 
           <span className='text-sm sm:text-lg text-gray-700'>
-            Let your invitation whisper the magic of that moment.
+           Let your invitation whisper the magic of that moment.
           </span>
 
         </h1>

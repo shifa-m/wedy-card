@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import Header from './components/section1/header'
 import Cards from './components/section1/Cards'
 import Main from './components/section2/Main'
@@ -70,23 +70,33 @@ const App = () => {
     }
   ]
 
+  const [showLogin,setShowLogin]=useState(false)
+  
+
 
   return (
     <div className='bg-gradient-to-tr from-pink-500 via-purple-400 to-blue-300 min-h-screen'>
-      <BrowserRouter>
-       <Header />
+     <BrowserRouter>
+  <Header onLoginClick={() => setShowLogin(true)} />
 
-       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+  <Routes>
+    <Route 
+      path="/" 
+      element={
+        <>
+          <Home />
+          <Cards data={img} />
+          <Main />
+        </>
+      } 
+    />
 
-       </Routes>
-      </BrowserRouter>
-     
-     <Cards data={img} />
-            <Main />
-            <Login/>
+    <Route path="/profile" element={<Profile />} />
+    <Route path="/cart" element={<Cart />} />
+  </Routes>
+
+  {showLogin && <Login onClose={() => setShowLogin(false)} />}
+</BrowserRouter>
 
     </div>
   )
